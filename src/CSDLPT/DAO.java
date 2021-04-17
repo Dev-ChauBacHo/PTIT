@@ -8,8 +8,8 @@ public class DAO {
     private final String USER_NAME = "sa";
     private final String PASSWORD = "Vinh1106";
     private final String dbClass = "com.microsoft.sqlserver.jdbc.SQLServerDriver";
-    private final String dbUrl = "jdbc:sqlserver://localhost:1433;" +
-            "databaseName = CSDLPT";
+    private final String dbUrl = "jdbc:sqlserver://localhost\\VINHTRAN:1433;" +
+            "databaseName = caro";
 
     public DAO() {
 

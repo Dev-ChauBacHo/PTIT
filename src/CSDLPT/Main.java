@@ -9,7 +9,7 @@ public class Main {
         try {
             Connection conn = new DAO().getConnection();
             Statement statement = conn.createStatement();
-            ResultSet rs = statement.executeQuery("SELECT * FROM tblManufactory");
+            ResultSet rs = statement.executeQuery("SELECT * FROM Users");
              while (rs.next()) {
                  System.out.println(rs.getInt(1) +
                          rs.getString(2) +
@@ -19,5 +19,7 @@ public class Main {
         } catch (Exception e) {
             e.printStackTrace();
         }
+
+        Statement statement;
     }
 }
