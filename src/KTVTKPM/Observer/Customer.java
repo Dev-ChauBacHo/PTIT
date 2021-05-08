@@ -19,6 +19,14 @@ public class Customer implements CustomerObserver {
         this.idAddress = idAddress;
     }
 
+    public Customer(int id, String phoneNumber, String email, int idFullName, int idAddress) {
+        this.id = id;
+        this.phoneNumber = phoneNumber;
+        this.email = email;
+        this.idFullName = idFullName;
+        this.idAddress = idAddress;
+    }
+
     public Customer(String phoneNumber, String email, Date birthday, int idFullName, int idAddress) {
         this.phoneNumber = phoneNumber;
         this.email = email;
@@ -30,6 +38,7 @@ public class Customer implements CustomerObserver {
     @Override
     public void getPromotioNotify(String message) {
         // get messages about the promotions
+        System.out.println("Customer with id = " + id);
     }
 
     public int getId() {
