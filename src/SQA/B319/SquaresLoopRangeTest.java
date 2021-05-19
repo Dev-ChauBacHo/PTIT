@@ -44,4 +44,9 @@ class SquaresLoopRangeTest {
         assertEquals("64", captureOutputOfProcess(arr[0], arr[1]));
     }
 
+    @Test
+    void testTinhThue() {
+
+    }
+
 }
