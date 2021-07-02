@@ -31,7 +31,7 @@ public class QuickSearch {
     }
 
     // Tìm vị trí cuối cùng xuất hiện của 1 kí tự trong xâu pattern
-    public static int[] preQsBc(char[] pattern) {
+    private static int[] preQsBc(char[] pattern) {
         // Khỏi tạo xâu gồm đầy đủ 256 kí tự
         int[] bc = new int[255];
         int xlength = pattern.length;
@@ -61,7 +61,7 @@ public class QuickSearch {
 
 
     // So sánh pattern với 1 đoạn trong s tính từ i
-    public static boolean cmp(char[] pattern, char[] s, int i) {
+    private static boolean cmp(char[] pattern, char[] s, int i) {
         for (char c : pattern) {
             if (c != s[i++]) {
                 return false;
