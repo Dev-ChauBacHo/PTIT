@@ -4,7 +4,6 @@ import java.util.Arrays;
 
 /*
     let say pattern has the length of xlength
-    s has the length of ylength
  */
 public class KarpRabin {
     public static void main(String[] args) {
