@@ -1,4 +1,4 @@
-package ChuyenDe.LeftToRight;
+package ChuyenDe.AnyOrder;
 
 public class QuickSearch {
 
