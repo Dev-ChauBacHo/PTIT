@@ -37,6 +37,7 @@ public class KnuthMorrisPratt2 {
         }
     }
 
+    // kmpNext lưu lại số kí tự mà kí tự n trong pattern giống với kí tự tính từ đầu xâu
     private static int[] preKMP(char[] pattern) {
         int xlength = pattern.length;
         int[] kmpNext = new int[xlength];
