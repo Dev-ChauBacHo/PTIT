@@ -7,7 +7,10 @@ import java.util.Arrays;
  */
 public class KarpRabin {
     public static void main(String[] args) {
-        search("GCAGAGAG".toCharArray(), "GCATCGCAGAGAGTTATACAGTACG".toCharArray());
+        String x = "GCAGAGAG";
+        String y = "GCATCGCAGAGAGTATACAGTACG";
+
+        search(x.toCharArray(), y.toCharArray());
     }
 
     private static void search(char[] pattern, char[] s) {
