@@ -2,7 +2,7 @@ package KyThuatLapTringHuongDoiTuong.LuyenTap.CoBan;
 
 import java.util.Scanner;
 
-public class TN10 {
+public class TN10_HoanViNguoc {
     private static int n;
     private static int[] a;
     private static boolean[] b;

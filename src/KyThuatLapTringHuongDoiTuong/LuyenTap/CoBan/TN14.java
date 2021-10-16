@@ -3,7 +3,9 @@ package KyThuatLapTringHuongDoiTuong.LuyenTap.CoBan;
 import java.util.PriorityQueue;
 import java.util.Scanner;
 
-public class TN14_MLE {
+public class TN14 {
+
+    private static PriorityQueue<Long> ropes;
 
     public static void main(String[] args) {
         Scanner in = new Scanner(System.in);
@@ -14,7 +16,7 @@ public class TN14_MLE {
         while (T-- > 0) {
             N = in.nextInt();
             sum = 0;
-            PriorityQueue<Long> ropes = new PriorityQueue<>();
+            ropes = new PriorityQueue<>();
             for (int i = 0; i < N; i++) ropes.add(in.nextLong());
             while (!ropes.isEmpty()) {
                 first = ropes.poll();

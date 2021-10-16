@@ -2,7 +2,7 @@ package KyThuatLapTringHuongDoiTuong.LuyenTap.CoBan;
 
 import java.util.Scanner;
 
-public class TN08 {
+public class TN08_XauNhiPhanKeTiep {
 
     public static void main(String[] args) {
         Scanner in = new Scanner(System.in);

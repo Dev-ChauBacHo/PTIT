@@ -2,7 +2,7 @@ package KyThuatLapTringHuongDoiTuong.LuyenTap.CoBan;
 
 import java.util.Scanner;
 
-public class J01011 {
+public class J01011_BoiSoChung_UocSoChung {
 
     public static void main(String[] args) {
         Scanner in = new Scanner(System.in);
