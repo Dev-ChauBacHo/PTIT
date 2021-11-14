@@ -1,9 +1,9 @@
-package KyThuatLapTringHuongDoiTuong.LuyenTap.CoBan;
+package KyThuatLapTringHuongDoiTuong.LuyenTap.NganXepHangDoi;
 
 import java.util.PriorityQueue;
 import java.util.Scanner;
 
-public class TN14 {
+public class TN14_NoiDay {
 
     private static PriorityQueue<Long> ropes;
 
