@@ -58,7 +58,7 @@ public class SoBuocDiChuyenItNhat {
 
             x = p.x;
             y = p.y;
-            if (y < n) {
+            if (y < m) {
                 t = matrix[x][y] - matrix[x][y + 1];
                 if (t < 0) t *= -1;
                 y += t;
@@ -66,7 +66,7 @@ public class SoBuocDiChuyenItNhat {
                     System.out.println(step);
                     break;
                 }
-                if (y <= n && isVisited[x][y] == 0) {
+                if (y <= m && isVisited[x][y] == 0) {
                     queue.add(new Point(x, y, step));
                     isVisited[x][y] = 1;
                 }
@@ -74,7 +74,7 @@ public class SoBuocDiChuyenItNhat {
 
             x = p.x;
             y = p.y;
-            if (x < n && y < n) {
+            if (x < n && y < m) {
                 int xx = matrix[x][y] - matrix[x + 1][y + 1];
                 int yy = matrix[x][y] - matrix[x + 1][y + 1];
                 if (xx < 0) xx *= -1;
@@ -85,7 +85,7 @@ public class SoBuocDiChuyenItNhat {
                     System.out.println(step);
                     break;
                 }
-                if (x <= n && y <= n && isVisited[x][y] == 0) {
+                if (x <= n && y <= m && isVisited[x][y] == 0) {
                     queue.add(new Point(x, y, step));
                     isVisited[x][y] = 1;
                 }
