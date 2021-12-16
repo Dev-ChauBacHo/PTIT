@@ -30,7 +30,7 @@ public class J05003_DanhSachDoiTuongSinhVien1 {
         private final Date ngaySinh;
 
         public SinhVien(int id, String ten, String lop, String ngaySinh, float gpa) throws ParseException {
-            this.ma = ((id < 10) ? "B20DCCN00" : "B20DCCN0") + id;
+            this.ma = "B20DCCN" + String.format("%02d", id);
             this.ten = ten;
             this.lop = lop;
             this.gpa = String.format("%.2f", gpa);

@@ -57,48 +57,16 @@ public class DuongDiTheoDFS {
                     }
                 }
             }
-
-//            for (int i = 1; i <= V; i++) {
-//                if (x != i) {
-//                    isVisited = new int[V + 2];
-//                    track = new int[V + 2];
-//                    size = 0;
-//                    isVisited[x] = 1;
-//                    track[++size] = x;
-//                    if (!DFS(x, i)) {
-//                        System.out.println("No path");
-//                    } else {
-//                        for (int j = 1; j <= size; j++) {
-//                            System.out.print(track[j] + " ");
-//                        }
-//                        System.out.println();
-//                    }
-//                }
-//            }
         }
     }
 
     private static void DFS(int u) {
+        isVisited[u] = 1;
         for (int i : vectors[u]) {
             if (isVisited[i] == 0) {
-                isVisited[i] = 1;
                 track[i] = u;
                 DFS(i);
             }
         }
     }
-
-//    private static boolean DFS(int u, int v) {
-//        if (u == v) return true;
-//        for (int i : vectors[u]) {
-//            if (isVisited[i] == 0) {
-//                isVisited[i] = 1;
-//                track[++size] = i;
-//                if (DFS(i, v)) return true;
-//                isVisited[i] = 0;
-//                --size;
-//            }
-//        }
-//        return false;
-//    }
 }
